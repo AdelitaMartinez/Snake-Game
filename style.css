@@ -63,3 +63,12 @@ body,
   font-weight: bolder;
   margin: 10px 0;
 }
+
+#highScore {
+  color: #d8ddca;
+  display: none;
+}
+
+.game-border-3, #logo {
+  background-color: #c4cfa3;
+}
