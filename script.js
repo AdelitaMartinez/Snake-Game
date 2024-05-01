@@ -5,6 +5,7 @@ const board = document.getElementById('game-board');
 // Define game variables
 // 20 rows and 20 colums
 let snake = [{ x: 10, y: 10 }];
+let food = generateFood();
 
 // Draw game map, snake, and food
 function draw() {
@@ -35,4 +36,14 @@ function setPosition(element, position) {
 }
 
 // Testing Draw Function 
-draw();
+// draw();
+
+function drawFood() {
+  const foodElement = createGameElement('div', 'food');
+  setPosition(foodElement, food);
+  board.appendChild(foodElement)
+}
+
+function generateFood() {
+
+}
