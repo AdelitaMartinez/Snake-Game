@@ -49,11 +49,17 @@ body,
   margin: 0;
 }
 
-#scores {
+.scores {
   display: flex;
   justify-content: space-between;
 }
 
 #score {
   color: #abb78a;
+}
+
+#scores, #highScore {
+  font-size: 40px;
+  font-weight: bolder;
+  margin: 10px 0;
 }
