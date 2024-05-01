@@ -48,4 +48,5 @@ function drawFood() {
 
 function generateFood() {
   const x = Math.floor(Math.random() * gridSize) + 1;
+  return {x, y};
 }
