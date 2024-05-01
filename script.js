@@ -17,6 +17,7 @@ function drawSnake() {
   snake.forEach((segment) => {
     const snakeElement = createGameElement('div', 'snake')
     setPosition(snake, segment)
+    board.appendChild(snakeElement);
   })
 }
 
@@ -32,3 +33,6 @@ function setPosition(element, position) {
   element.style.gridColumn = position.x;
   element.style.gridRow = position.y;
 }
+
+// Testing Draw Function 
+draw();
