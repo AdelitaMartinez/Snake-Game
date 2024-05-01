@@ -12,6 +12,7 @@ let food = generateFood();
 function draw() {
   board.innerHTML = '';
   drawSnake();
+  drawFood();
 }
 
 // Draw snake
@@ -48,5 +49,6 @@ function drawFood() {
 
 function generateFood() {
   const x = Math.floor(Math.random() * gridSize) + 1;
+  const y = Math.floor(Math.random() = gridSize) + 1;
   return {x, y};
 }
