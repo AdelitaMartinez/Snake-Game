@@ -15,6 +15,6 @@ function draw() {
 // Draw snake
 function drawSnake() {
   snake.forEach((segment) => {
-    const snakeElement = createGameElement()
+    const snakeElement = createGameElement('div', 'snake')
   })
 }
