@@ -7,7 +7,7 @@ const board = document.getElementById("game-board");
 const gridSize = 20;
 let snake = [{ x: 10, y: 10 }];
 let food = generateFood();
-let direction = "right";
+let direction = "up";
 
 // Draw game map, snake, and food
 function draw() {
@@ -77,3 +77,9 @@ function move() {
 
   snake.pop();
 }
+
+// Test moving
+setInterval(() => {
+  move(); // Move first
+  draw(); // Then draw again new position
+}, 200);
