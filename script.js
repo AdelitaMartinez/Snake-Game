@@ -44,7 +44,7 @@ function setPosition(element, position) {
 }
 
 // Testing Draw Function
-draw();
+// draw();
 
 // Draw food function
 function drawFood() {
@@ -105,4 +105,8 @@ function startGame() {
   gameStarted = true; // Keep track of a running game
   instructionText.style.display = 'none';
   logo.style.display = 'none';
+  gameInterval = setInterval(() => {
+    // checkCollision();
+    draw();
+  }, gameSpeedDelay);
 }
