@@ -110,3 +110,13 @@ function startGame() {
     draw();
   }, gameSpeedDelay);
 }
+
+// Keypress event listener
+function handleKeyPress(event) {
+  if ( 
+    ( !gameStarted && event.code === 'Space' ) || 
+    ( !gameStarted && event.key === ' ' )
+  ) {
+    startGame();
+  }
+}
