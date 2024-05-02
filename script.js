@@ -10,6 +10,7 @@ let food = generateFood();
 let direction = "right";
 let gameInterval;
 let gameSpeedDelay = 200;
+let gameStarted = false;
 
 // Draw game map, snake, and food
 function draw() {
@@ -97,3 +98,7 @@ function move() {
 //   draw(); // Then draw again new position
 // }, 200);
 
+// Start game function
+function startGame() {
+  gameStarted = true; // Keep track of a running game
+}
