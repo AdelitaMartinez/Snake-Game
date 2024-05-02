@@ -62,14 +62,14 @@ function move() {
     case "up":
       head.y--;
       break;
-    case "right":
-      head.x++;
+    case "down":
+      head.y++;
       break;
     case "right":
       head.x++;
       break;
-    case "right":
-      head.x++;
+    case "left":
+      head.x--;
       break;
   }
 }
