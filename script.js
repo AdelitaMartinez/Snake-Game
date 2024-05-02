@@ -72,4 +72,6 @@ function move() {
       head.x--;
       break;
   }
+
+  snake.unshift(head);
 }
