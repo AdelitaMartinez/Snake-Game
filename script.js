@@ -74,4 +74,6 @@ function move() {
   }
 
   snake.unshift(head);
+
+  snake.pop();
 }
