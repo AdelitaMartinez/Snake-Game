@@ -38,7 +38,7 @@ function setPosition(element, position) {
 }
 
 // Testing Draw Function 
-// draw();
+ draw();
 
 // Draw food function
 function drawFood() {
@@ -47,8 +47,14 @@ function drawFood() {
   board.appendChild(foodElement)
 }
 
+// Generate food
 function generateFood() {
   const x = Math.floor(Math.random() * gridSize) + 1;
   const y = Math.floor(Math.random() * gridSize) + 1;
   return {x, y};
+}
+
+// Moving the snake 
+function move() {
+  const head = { ...snake[0] }
 }
