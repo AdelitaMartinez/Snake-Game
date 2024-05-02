@@ -1,6 +1,8 @@
 // Define HTML elements
 
 const board = document.getElementById("game-board");
+const instructionText = document.getElementById('instruction-text');
+const logo = document.getElementById('logo');
 
 // Define game variables
 // 20 rows and 20 colums
@@ -101,4 +103,6 @@ function move() {
 // Start game function
 function startGame() {
   gameStarted = true; // Keep track of a running game
+  instructionText.style.display = 'none';
+  logo.style.display = 'none';
 }
