@@ -4,12 +4,14 @@ const board = document.getElementById("game-board");
 const instructionText = document.getElementById('instruction-text');
 const logo = document.getElementById('logo');
 const score = document.getElementById('score');
+const highScoreText = document.getElementById('highScore');
 
 // Define game variables
 // 20 rows and 20 colums
 const gridSize = 20;
 let snake = [{ x: 10, y: 10 }];
 let food = generateFood();
+let highScore = 0;
 let direction = "right";
 let gameInterval;
 let gameSpeedDelay = 200;
@@ -192,4 +194,11 @@ function stopGame() {
   gameStarted = false;
   instructionText.style.display = 'block';
   logo.style.display = 'block';
+}
+
+function updateHighSchore() {
+  const currentScore = snake.length - 1;
+  if (currentScore > highScore) {
+    highScore = currentScore;
+  }
 }
