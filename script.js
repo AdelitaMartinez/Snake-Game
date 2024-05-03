@@ -19,7 +19,7 @@ let gameStarted = false;
 
 // Draw game map, snake, and food
 function draw() {
-  board.innerHTML = "";
+  board.innerHTML = '';
   drawSnake();
   drawFood();
   updateScore();
@@ -28,7 +28,7 @@ function draw() {
 // Draw snake
 function drawSnake() {
   snake.forEach((segment) => {
-    const snakeElement = createGameElement("div", "snake");
+    const snakeElement = createGameElement('div', 'snake');
     setPosition(snakeElement, segment);
     board.appendChild(snakeElement);
   });
@@ -53,7 +53,7 @@ function setPosition(element, position) {
 // Draw food function
 function drawFood() {
   if (gameStarted) {
-    const foodElement = createGameElement("div", "food");
+    const foodElement = createGameElement('div', 'food');
     setPosition(foodElement, food);
     board.appendChild(foodElement);
   }
@@ -114,6 +114,7 @@ function startGame() {
   instructionText.style.display = "none";
   logo.style.display = "none";
   gameInterval = setInterval(() => {
+    move();
     checkCollision();
     draw();
   }, gameSpeedDelay);
