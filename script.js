@@ -173,6 +173,8 @@ function checkCollision() {
 }
 
 function resetGame() {
+    updateHighSchore();
+    stopGame();
   snake = [ { x: 10, y: 10 } ];
   food = generateFood();
   direction = 'right';
@@ -185,3 +187,9 @@ function updateScore() {
   score.textContent = currentScore.toString().padStart(3, '0');
 }
 
+function stopGame() {
+  clearInterval(gameInterval);
+  gameStarted = false;
+  instructionText.style.display = 'block';
+  logo.style.display = 'block';
+}
