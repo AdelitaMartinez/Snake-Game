@@ -20,6 +20,7 @@ function draw() {
   board.innerHTML = "";
   drawSnake();
   drawFood();
+  updateScore();
 }
 
 // Draw snake
@@ -183,3 +184,4 @@ function updateScore() {
   const currentScore = snake.length - 1;
   score.textContent = currentScore.toString().padStart(3, '0');
 }
+
