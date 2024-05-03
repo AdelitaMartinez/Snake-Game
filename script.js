@@ -3,6 +3,7 @@
 const board = document.getElementById("game-board");
 const instructionText = document.getElementById('instruction-text');
 const logo = document.getElementById('logo');
+const score = document.getElementById('score');
 
 // Define game variables
 // 20 rows and 20 colums
@@ -179,5 +180,6 @@ function resetGame() {
 }
 
 function updateScore() {
+  const currentScore = snake.length - 1;
   
 }
