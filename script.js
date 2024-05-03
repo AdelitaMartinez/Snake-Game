@@ -154,3 +154,11 @@ function increaseSpeed() {
     gameSpeedDelay -= 1;
   }
 }
+
+function checkCollision() {
+  const head = snake[0];
+
+  if( head.x < 1 || head.x > gridSize || head.y < 1 || head.y > gridSize) {
+    resetGame();
+  }
+}
