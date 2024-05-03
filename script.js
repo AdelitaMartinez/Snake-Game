@@ -88,7 +88,7 @@ function move() {
     clearInterval(gameInterval); // Clear past interval
     gameInterval = setInterval(() => {
       move();
-      // checkCollision();
+      checkCollision();
       draw();
     }, gameSpeedDelay);
   } else {
@@ -108,7 +108,7 @@ function startGame() {
   instructionText.style.display = 'none';
   logo.style.display = 'none';
   gameInterval = setInterval(() => {
-    // checkCollision();
+    checkCollision();
     draw();
   }, gameSpeedDelay);
 }
@@ -164,8 +164,12 @@ function checkCollision() {
 
   for (let i = 1; i < snake.length; i++) {
     if (head.x === snake[i].x && head.y === snake[i].y) {
-      
+      resetGame();
     }
 
   }
+}
+
+function resetGame() {
+  
 }
