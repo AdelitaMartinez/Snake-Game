@@ -181,5 +181,5 @@ function resetGame() {
 
 function updateScore() {
   const currentScore = snake.length - 1;
-  
+  score.textContent = currentScore.toString().padStart(3, '0')
 }
