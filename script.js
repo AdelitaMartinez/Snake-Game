@@ -116,7 +116,7 @@ function startGame() {
   gameInterval = setInterval(() => {
     move();
     checkCollision();
-    draw();
+    draw(); 
   }, gameSpeedDelay);
 }
 
