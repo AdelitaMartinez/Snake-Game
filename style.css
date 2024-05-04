@@ -118,7 +118,7 @@ body,
 	-moz-box-shadow:  0 .2em maroon;
 	-o-box-shadow:  0 .2em maroon;
 	box-shadow:  0 .2em maroon;
-	/* color: red; */
+	color: red;
   background-image: -o-linear-gradient(left top, pink 3%, red 22%, maroon 99%);
 	background-image: -moz-linear-gradient(left top, pink 3%, red 22%, maroon 99%);
 	background-image: -webkit-linear-gradient(left top, pink 3%, red 22%, maroon 99%);
@@ -139,8 +139,12 @@ body,
   top: .2em;
 }
 
-.btns:active {
+/* .btns:active {
   box-shadow: none;
   position: relative;
   top: .2em;
+} */
+
+.directional-buttons {
+  
 }
