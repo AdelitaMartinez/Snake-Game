@@ -85,3 +85,7 @@ body,
 #logo {
   position: absolute;
 }
+
+.buttons {
+  background-color: #7c7c7c;
+}
