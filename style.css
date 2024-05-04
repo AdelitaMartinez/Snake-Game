@@ -106,3 +106,24 @@ body,
   text-transform: uppercase;
   padding: 5px;
 }
+
+#btn-start {
+  text-shadow: 1px 1px pink, -1px -1px maroon;
+
+  line-height: 1.5em;
+  text-align: center;
+  display: inline-block;
+  background-color: red;
+  -webkit-box-shadow:  0 .2em maroon;
+	-moz-box-shadow:  0 .2em maroon;
+	-o-box-shadow:  0 .2em maroon;
+	box-shadow:  0 .2em maroon;
+	/* color: red; */
+  background-image: -o-linear-gradient(left top, pink 3%, red 22%, maroon 99%);
+	background-image: -moz-linear-gradient(left top, pink 3%, red 22%, maroon 99%);
+	background-image: -webkit-linear-gradient(left top, pink 3%, red 22%, maroon 99%);
+	background-image: linear-gradient(left top, pink 3%, red 22%, maroon 99%);
+	cursor: pointer;
+  padding-left: 5px;
+  
+}
