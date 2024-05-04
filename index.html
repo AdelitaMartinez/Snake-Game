@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
   <title>Snake Game</title>
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
 </head>
+
 <body>
   <div>
     <div class="scores">
@@ -25,22 +27,25 @@
     </div>
     <div id="button-container">
       <buttons class="btns" id="btn-start">Start</buttons>
-      <buttons class="directional-btns up">
-        <span class="visually-hidden">Up</span>
-      </buttons>
-      <buttons class="directional-btns down" >
-        <span class="visually-hidden">Down</span>
-      </buttons>
-      <buttons class="directional-btns left" >
-        <span class="visually-hidden">Left</span>
-      </buttons>
-      <buttons class="directional-btns right" >
-        <span class="visually-hidden">Right</span>
-      </buttons>
+      <div class="directional-btns">
+        <buttons class="directional-btn up">
+          <span class="visually-hidden">Up</span>
+        </buttons>
+        <buttons class="directional-btn down">
+          <span class="visually-hidden">Down</span>
+        </buttons>
+        <buttons class="directional-btn left">
+          <span class="visually-hidden">Left</span>
+        </buttons>
+        <buttons class="directional-btn right">
+          <span class="visually-hidden">Right</span>
+        </buttons>
+      </div>
     </div>
   </div>
   <h1 id="instruction-text">Press Spacebar to start the game</h1>
   <img id="logo" src="snake-game-ai-gen.png" alt="snake-logo">
-  
+
 </body>
+
 </html>

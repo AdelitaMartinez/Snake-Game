@@ -152,7 +152,5 @@ body,
   grid-gap: 0.5rem;
   grid-template-columns: 45fr 60fr 45fr;
   grid-template-rows: 45fr 60fr 45fr;
-    grid-template-areas: "....  up  ....."
-                       "left  ..  right"
-                       ".... down ....."; 
+  
 }
