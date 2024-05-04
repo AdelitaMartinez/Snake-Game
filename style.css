@@ -133,6 +133,12 @@ body,
 		border-radius: .75em;
 }
 
+#btn-start:active {
+  box-shadow: none;
+  position: relative;
+  top: .2em;
+}
+
 .btns:active {
   box-shadow: none;
   position: relative;
